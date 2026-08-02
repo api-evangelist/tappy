@@ -1,7 +1,21 @@
 aid: tappy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tappy.png
 name: Tappy
 description: Tappy is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+  network as a stub for enrichment. As of 2026-07, tappy.co is a pre-launch placeholder page ("Tappy is sleeping /
+  Something is brewing") that exposes no API, developer documentation, or SDKs. The only published surfaces are an
+  Instagram profile and a contact email; this profile remains a lead pending a public product and API surface.
 url: https://raw.githubusercontent.com/api-evangelist/tappy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +25,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 apis: []
@@ -23,3 +37,13 @@ maintainers:
 common:
 - type: Website
   url: https://tappy.co
+- type: SocialMedia
+  url: https://instagram.com/tappyco
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'tappy.co is a pre-launch placeholder (HTTP 200); no API surface. Probed /.well-known/{security.txt,
+    openid-configuration,oauth-authorization-server,api-catalog,ai-plugin.json}, /llms.txt, /openapi.json, /docs,
+    /api, /developers — all HTTP 404. Contact: hello@tappy.co; Instagram: instagram.com/tappyco.'
